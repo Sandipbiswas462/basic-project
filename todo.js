@@ -29,10 +29,12 @@ while(true){
         
     }
     else if(req == "delete"){
-        let ldx = prompt("Enter your task what you want delete");
-        let p =document.createElement('p');
-        p.innerText = todo.slice(ldx, 1);
-        document.querySelector('body').append(p);
+        console.log("-----------");
+        let idx = prompt("Enter your task what you want delete");
+        // let p =document.createElement('p');
+        // p.innerText = todo.slice(ldx, 1);
+        // document.querySelector('body').prepend(p);
+        todo.splice(idx, 1);
         console.log("task delete");
     }
     req = prompt("Enter your request");
